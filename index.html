@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aprenda educação financeira com aulas curtas, simuladores e desafios práticos para jovens.">
+  <title>EducaFin — Educação financeira para jovens</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="EducaFin início">
+        <span class="brand-mark">EF</span>
+        <span>EducaFin <small>Aprender para escolher</small></span>
+      </a>
+      <nav class="menu">
+        <button class="menu-item active" data-tab="inicio"><span>⌂</span> Início</button>
+        <button class="menu-item" data-tab="aprender"><span>▤</span> Aprenda</button>
+        <button class="menu-item" data-tab="orcamento"><span>▣</span> Meu orçamento</button>
+        <button class="menu-item" data-tab="juros"><span>%</span> Laboratório de juros</button>
+        <button class="menu-item" data-tab="desafios"><span>✓</span> Desafios e quiz</button>
+      </nav>
+      <div class="sidebar-note"><strong>Um passo de cada vez.</strong><p>Educação financeira é aprender a fazer escolhas conscientes — não precisa ter muito dinheiro para começar.</p></div>
+    </aside>
+
+    <main class="main-content">
+      <section id="inicio" class="tab-panel active">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">SEU DINHEIRO, SUAS ESCOLHAS</p>
+            <h1>Aprender sobre dinheiro também é construir o seu futuro.</h1>
+            <p>Explore situações do dia a dia, teste suas decisões e descubra ferramentas para cuidar melhor do dinheiro.</p>
+            <button class="btn-main" data-go="aprender">Começar a aprender <span aria-hidden="true">→</span></button>
+          </div>
+          <div class="hero-art" aria-hidden="true"><div class="coin coin-one">R$</div><div class="coin coin-two">+</div><div class="hero-card"><span>MEU PLANO</span><strong>Pequenas escolhas.</strong><strong>Novas possibilidades.</strong><div class="hero-bars"><i></i><i></i><i></i><i></i><i></i></div></div></div>
+        </div>
+        <div class="section-heading"><div><p class="eyebrow">SEU ESPAÇO DE APRENDIZAGEM</p><h2>Por onde começar?</h2></div></div>
+        <div class="feature-grid">
+          <button class="feature-card" data-go="aprender"><span class="feature-icon purple">▤</span><strong>Aprenda o básico</strong><span>Entenda orçamento, consumo consciente e metas.</span><b>Ver aulas →</b></button>
+          <button class="feature-card" data-go="orcamento"><span class="feature-icon green">▣</span><strong>Simule um orçamento</strong><span>Distribua uma renda fictícia e veja o resultado.</span><b>Experimentar →</b></button>
+          <button class="feature-card" data-go="juros"><span class="feature-icon orange">%</span><strong>Explore os juros</strong><span>Compare como taxas e tempo afetam os valores.</span><b>Fazer simulação →</b></button>
+        </div>
+        <div class="progress-card"><div><p class="eyebrow">SEU PROGRESSO NESTE NAVEGADOR</p><h2>Continue no seu ritmo</h2><p id="progress-message">Responda ao quiz para registrar sua primeira conquista.</p></div><div class="progress-number"><strong id="xp-total">0</strong><span>pontos de aprendizagem</span></div></div>
+        <p class="disclaimer">Projeto educativo. As simulações usam valores fictícios e não são recomendações de investimento.</p>
+      </section>
+
+      <section id="aprender" class="tab-panel">
+        <div class="page-heading"><p class="eyebrow">CONCEITOS PARA A VIDA REAL</p><h1>Aprenda no seu ritmo</h1><p>Comece pelo básico e avance para os assuntos que mais despertam sua curiosidade.</p></div>
+        <div class="lesson-grid">
+          <article class="lesson-card"><span class="lesson-number">01</span><p class="eyebrow">PLANEJAMENTO</p><h2>O que é um orçamento?</h2><p>É um plano para entender quanto dinheiro entra, quais gastos são necessários e o que pode ser destinado a objetivos.</p><div class="example"><strong>Exemplo:</strong> se você recebe R$ 100, anote os gastos previstos antes de decidir o que fazer com o restante.</div><h3>Experimente</h3><ul><li>Anote as entradas de dinheiro.</li><li>Liste os gastos essenciais e os opcionais.</li><li>Reserve um valor possível para uma meta, quando der.</li></ul></article>
+          <article class="lesson-card"><span class="lesson-number">02</span><p class="eyebrow">ESCOLHAS</p><h2>Consumo consciente</h2><p>Antes de comprar, vale comparar opções e pensar se a compra atende a uma necessidade ou a um desejo que pode esperar.</p><div class="example"><strong>Uma pausa útil:</strong> preciso disso agora? Tenho outra opção? O preço cabe no meu planejamento?</div><h3>Experimente</h3><ul><li>Compare o preço total, não apenas a parcela.</li><li>Pesquise alternativas e condições.</li><li>Evite decidir sob pressão ou por impulso.</li></ul></article>
+          <article class="lesson-card"><span class="lesson-number">03</span><p class="eyebrow">CRÉDITO E JUROS</p><h2>Entenda os juros</h2><p>Juros são valores associados ao uso do dinheiro ao longo do tempo. Podem representar rendimento ou aumentar uma dívida.</p><div class="example"><strong>Atenção:</strong> uma parcela pequena não garante que uma compra seja barata. Observe o custo total e as condições.</div><h3>Experimente</h3><ul><li>Confira taxas, prazos e valor total.</li><li>Entenda a diferença entre juros simples e compostos.</li><li>Desconfie de promessas de ganho garantido.</li></ul></article>
+          <article class="lesson-card"><span class="lesson-number">04</span><p class="eyebrow">PROTEÇÃO</p><h2>Segurança financeira digital</h2><p>Proteger seus dados também faz parte de cuidar do dinheiro.</p><div class="example"><strong>Sinal de alerta:</strong> mensagens com urgência, links estranhos ou pedidos de senha e códigos podem ser tentativas de golpe.</div><h3>Boas práticas</h3><ul><li>Nunca compartilhe senhas ou códigos de autenticação.</li><li>Confirme pedidos por canais oficiais.</li><li>Converse com um adulto de confiança se algo parecer suspeito.</li></ul></article>
+        </div>
+      </section>
+
+      <section id="orcamento" class="tab-panel">
+        <div class="page-heading"><p class="eyebrow">SIMULADOR INTERATIVO</p><h1>Monte um orçamento fictício</h1><p>Altere os valores e observe como suas escolhas afetam o saldo. Não é necessário inserir dados pessoais.</p></div>
+        <div class="simulator-layout">
+          <div class="card form-card"><h2>1. Escolha os valores</h2><label for="income">Dinheiro disponível no mês (R$)</label><input id="income" type="number" min="0" max="1000000" step="0.01" value="300"><div class="field-note">Exemplo fictício: mesada, presente ou renda de uma atividade.</div>
+            <div class="field-row"><label for="essential">Gastos essenciais (R$)</label><input id="essential" type="number" min="0" max="1000000" step="0.01" value="100"></div>
+            <div class="field-row"><label for="wants">Desejos e lazer (R$)</label><input id="wants" type="number" min="0" max="1000000" step="0.01" value="80"></div>
+            <div class="field-row"><label for="goal">Guardar para uma meta (R$)</label><input id="goal" type="number" min="0" max="1000000" step="0.01" value="50"></div>
+            <p class="form-error" id="budget-error" role="status"></p>
+          </div>
+          <div class="card result-card"><p class="eyebrow">2. RESULTADO DA SIMULAÇÃO</p><h2>Como ficou seu plano?</h2><div class="balance-line"><span>Dinheiro disponível</span><strong id="out-income">R$ 300,00</strong></div><div class="balance-line"><span>Gastos essenciais</span><strong id="out-essential">R$ 100,00</strong></div><div class="balance-line"><span>Desejos e lazer</span><strong id="out-wants">R$ 80,00</strong></div><div class="balance-line"><span>Meta</span><strong id="out-goal">R$ 50,00</strong></div><div class="balance-total"><span id="balance-label">Saldo restante</span><strong id="out-balance">R$ 70,00</strong></div><div class="balance-track"><span id="balance-bar"></span></div><p id="budget-feedback" class="feedback-box" aria-live="polite">Seu plano tem um saldo restante. Você pode decidir se deseja ajustar os valores.</p><p class="small-note">Não existe uma divisão perfeita para todas as pessoas. As necessidades e possibilidades variam.</p></div>
+        </div>
+      </section>
+
+      <section id="juros" class="tab-panel">
+        <div class="page-heading"><p class="eyebrow">LABORATÓRIO FINANCEIRO</p><h1>Veja os juros em ação</h1><p>Use valores fictícios para comparar juros simples e compostos. As contas não incluem impostos, tarifas ou variação de taxas.</p></div>
+        <div class="simulator-layout">
+          <div class="card form-card"><h2>Parâmetros da simulação</h2><label for="capital">Valor inicial (R$)</label><input id="capital" type="number" min="0" max="10000000" step="0.01" value="200"><label for="rate">Taxa por período (%)</label><input id="rate" type="number" min="0" max="100" step="0.1" value="5"><label for="periods">Número de períodos</label><input id="periods" type="number" min="0" max="600" step="1" value="6"><label for="period-unit">O que significa um período?</label><select id="period-unit"><option value="mês">Um mês</option><option value="ano">Um ano</option></select><button class="btn-main full-width" id="calculate-interest">Calcular comparação</button><p class="form-error" id="interest-error" role="status"></p></div>
+          <div class="card result-card"><p class="eyebrow">RESULTADOS</p><h2>Comparação dos modelos</h2><div class="interest-result"><span>Juros simples</span><strong id="simple-total">R$ 260,00</strong><small id="simple-interest">Juros: R$ 60,00</small></div><div class="interest-result accent-result"><span>Juros compostos</span><strong id="compound-total">R$ 268,02</strong><small id="compound-interest">Juros: R$ 68,02</small></div><div class="example"><strong>O que observar?</strong><p id="interest-explanation">Nos juros simples, o cálculo usa sempre o valor inicial. Nos compostos, os juros de cada período entram no saldo usado no período seguinte.</p></div><p class="small-note">Uma simulação matemática não garante que um produto financeiro real terá esse rendimento.</p></div>
+        </div>
+      </section>
+
+      <section id="desafios" class="tab-panel">
+        <div class="page-heading"><p class="eyebrow">PRATIQUE O QUE APRENDEU</p><h1>Desafios e quiz</h1><p>Responda às perguntas e leia a explicação. O objetivo é aprender, não acertar tudo de primeira.</p></div>
+        <div class="challenge-grid">
+          <article class="card">
+            <p class="eyebrow">DESAFIO RÁPIDO</p>
+            <h2 id="challenge-title">Uma escolha antes da compra</h2>
+            <p id="challenge-prompt">Você quer comprar algo que não estava planejado. Qual é uma boa primeira atitude?</p>
+            <div id="challenge-options" class="challenge-options">
+              <button class="opt-button" data-challenge="0">Comprar logo para não perder a oportunidade.</button>
+              <button class="opt-button" data-challenge="1">Comparar opções e conferir se cabe no orçamento.</button>
+              <button class="opt-button" data-challenge="2">Usar crédito sem conferir as condições.</button>
+            </div>
+            <p class="feedback-box" id="challenge-feedback" aria-live="polite">Escolha uma resposta para ver a explicação.</p>
+            <button class="btn-main" id="new-challenge" type="button" hidden>Próximo desafio →</button>
+          </article>
+          <article class="card quiz-card">
+            <p class="eyebrow">QUIZ DE APRENDIZAGEM</p>
+            <div class="quiz-topline"><span id="quiz-position">Pergunta 1 de 4</span><span id="quiz-score">0 acertos</span></div>
+            <div class="quiz-progress"><span id="quiz-progress-bar"></span></div>
+            <h2 id="quiz-question">Qual frase descreve melhor um orçamento?</h2>
+            <div id="quiz-options" class="challenge-options"></div>
+            <p class="feedback-box" id="quiz-feedback" aria-live="polite">Selecione uma resposta.</p>
+            <button class="btn-main" id="next-question" disabled>Próxima pergunta →</button>
+          </article>
+        </div>
+      </section>
+      <footer class="site-footer">EducaFin · Projeto educativo para jovens · <span>Valores de exemplo, sem aconselhamento financeiro individual.</span></footer>
+    </main>
+  </div>
+</body>
+</html>
